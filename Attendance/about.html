@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About | Student Attendance</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <style>
+    body { opacity:0; transition:opacity 0.6s ease-in; background:#f9f9f9; font-family:"Segoe UI",sans-serif;}
+    body.loaded { opacity:1; }
+    .jumbotron { background:#00838f; color:white; padding:60px 30px; margin-top:70px; border-radius:10px; }
+    h1 span { color:#ffd369; }
+    .content-section { padding:40px 20px; background:white; margin:20px 0; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1);}
+    footer { padding:20px; background:#222; color:#bbb; text-align:center; }
+    footer a { color:#00adb5; text-decoration:none; }
+    footer a:hover { color:#fff; }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.php">📘 Online Attendance</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.php">Home</a></li>
+        <li class="active"><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="container">
+    <div class="jumbotron text-center">
+      <h1>About <span>Student Attendance Portal</span></h1>
+      <p>Smart way to manage and track student attendance efficiently</p>
+    </div>
+
+    <!-- About Content -->
+    <div class="content-section">
+      <h3>🎯 Our Mission</h3>
+      <p>
+        The Student Attendance Portal aims to provide a digital platform where students and teachers
+        can monitor attendance records seamlessly. It minimizes manual errors, saves time, and gives
+        real-time insights into class performance.
+      </p>
+    </div>
+
+    <div class="content-section">
+      <h3>⚡ Key Features</h3>
+      <ul>
+        <li>✔ Real-time attendance tracking</li>
+        <li>✔ Subject & section-wise analytics</li>
+        <li>✔ Easy integration with student records</li>
+        <li>✔ Interactive dashboards with charts</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Student Attendance Portal | <a href="index.php">Home</a></p>
+  </footer>
+
+<script>
+  $(document).ready(function(){ $("body").addClass("loaded"); });
+</script>
+</body>
+</html>
